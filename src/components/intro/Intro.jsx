@@ -1,7 +1,9 @@
-import React from "react";
+import "./intro.scss";
 
 export default function Intro(){
     return(
-        <div></div>
+        <div className="intro">
+            youngKing
+        </div>
     )
 }
