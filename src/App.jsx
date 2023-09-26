@@ -1,4 +1,5 @@
 import React from "react";
+import "./app.scss";
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/intro";
 import Porfolio from "./components/portfolio/Portfolio";
