@@ -3,10 +3,10 @@ import { Person, Mail } from "@mui/icons-material";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
 	return (
-		<div className={'topbar ' + (menuOpen && 'active')}>
+		<div className={"topbar " + (menuOpen && "active")}>
 			<div className='wrapper'>
 				<div className='left'>
-					<a href='#intro' className='logo'>
+					<a href='#intro' className='logo' onClick={() => setMenuOpen(false)}>
 						genius.
 					</a>
 					<div className='itemContainer'>
