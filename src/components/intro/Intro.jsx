@@ -11,6 +11,7 @@ export default function Intro() {
 				showCursor: false,
 				backDelay: 1500,
 				backSpeed: 60,
+				showCursor: true,
 				strings: ["Software Engineer", "Fullstack Developer", "Content Creator"],
 			});
 		};
