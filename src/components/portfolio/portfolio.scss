@@ -16,18 +16,18 @@
 		list-style: none;
 		display: flex;
 
-		li {
-			font-size: 12px;
-			margin-right: 5px;
-			padding: 7px;
-			border-radius: 10px;
-            cursor: pointer;
+		// li {
+		// 	font-size: 12px;
+		// 	margin-right: 5px;
+		// 	padding: 7px;
+		// 	border-radius: 10px;
+        //     cursor: pointer;
 
-			&.active {
-				background-color: $mainColor;
-				color: white;
-			}
-		}
+		// 	&.active {
+		// 		background-color: $mainColor;
+		// 		color: white;
+		// 	}
+		// }
 	}
     .container{
         width: 70%;
