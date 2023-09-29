@@ -1,21 +1,81 @@
 import "./portfolio.scss";
 
 export default function Portfolio() {
+	const list = [
+		{
+			id: "featured",
+			title: "Featured",
+		},
+		{
+			id: "web",
+			title: "Web App",
+		},
+		{
+			id: "mobile",
+			title: "Mobile App",
+		},
+		{
+			id: "design",
+			title: "Design",
+		},
+		{
+			id: "content",
+			title: "Content",
+		},
+	];
+
 	return (
 		<div className='portfolio' id='portfolio'>
 			<h1>Portfolio</h1>
 			<ul>
-				<li className="active">Features</li>
-				<li>Web app</li>
-				<li>Mobile app</li>
-				<li>Design</li>
-				<li>Branding</li>
+{list.map(item) }
 			</ul>
 			<div className='container'>
-				<div>
-					<img src='' alt='' />
+				<div className='item'>
+					<img
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU'
+						alt=''
+					/>
 					<h3>Banking app</h3>
 				</div>
+				<div className='item'>
+					<img
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU'
+						alt=''
+					/>
+					<h3>Banking app</h3>
+				</div>
+				<div className='item'>
+					<img
+						src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU'
+						alt=''
+					/>
+					<h3>Banking app</h3>
+				</div>
+				<>
+					{" "}
+					<div className='item'>
+						<img
+							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU'
+							alt=''
+						/>
+						<h3>Banking app</h3>
+					</div>
+					<div className='item'>
+						<img
+							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU'
+							alt=''
+						/>
+						<h3>Banking app</h3>
+					</div>
+					<div className='item'>
+						<img
+							src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU'
+							alt=''
+						/>
+						<h3>Banking app</h3>
+					</div>
+				</>
 			</div>
 		</div>
 	);
