@@ -1,35 +1,41 @@
+@import "../../global.scss";
+
 .works {
 	background-color: crimson;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    position: relative;
+	position: relative;
 
+	.arrow {
+		height: 50px;
+		position: absolute;
+		cursor: pointer;
 
+		&.left {
+			left: 100px;
+			transform: rotate(180deg);
+			cursor: pointer;
+		}
 
-    .arrow{
-        height: 50px;
-        position: absolute;
-        
-
-        &.left{
-            left: 100px;
-            transform: rotate(180deg);
-            cursor: pointer;
-        }
-
-        &.right{
-            right: 100px;
-            cursor: pointer;
-        }
-    }
+		&.right {
+			right: 100px;
+			cursor: pointer;
+		}
+	}
 
 	.slider {
 		height: 350px;
 		display: flex;
 		position: absolute;
 		left: 0;
-        transition: all 1s ease-out;
+		transition: all 1s ease-out;
+
+		@include mobile {
+			height: 100vh;
+			flex-direction: column;
+			justify-content: center;
+		}
 
 		.container {
 			width: 100vw;
@@ -46,6 +52,13 @@
 				align-items: center;
 				justify-content: center;
 
+				
+				@include mobile {
+					width: 90%;
+					height: 220px;
+					margin: 14px;
+
+				}
 				.left {
 					flex: 4;
 					height: 80%;
@@ -66,41 +79,40 @@
 							border-radius: 50%;
 							background-color: coral;
 							display: flex;
-                            align-items: center;
+							align-items: center;
 							justify-content: center;
 
 							img {
 								width: 25px;
 							}
 						}
-                        h2{
-                            font-size: 20px;
-                        }
-                        p{
-                            font-size: 13px;
-                        }
-                        span{
-                            font-size: 12px;
-                            font-weight: 600;
-                            text-decoration: underline;
-                            cursor: pointer;
-                        }
+						h2 {
+							font-size: 20px;
+						}
+						p {
+							font-size: 13px;
+						}
+						span {
+							font-size: 12px;
+							font-weight: 600;
+							text-decoration: underline;
+							cursor: pointer;
+						}
 					}
 				}
 
 				.right {
 					flex: 8;
 					height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    overflow: hidden;
-					
-                    img{
-                        width: 400px;
-                        transform: rotate(-10deg);
-                        
-                    }
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					overflow: hidden;
+
+					img {
+						width: 400px;
+						transform: rotate(-10deg);
+					}
 				}
 			}
 		}
