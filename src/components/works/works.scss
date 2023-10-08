@@ -11,6 +11,9 @@
 		height: 50px;
 		position: absolute;
 		cursor: pointer;
+		@include mobile {
+			display: none;
+		}
 
 		&.left {
 			left: 100px;
@@ -52,12 +55,10 @@
 				align-items: center;
 				justify-content: center;
 
-				
 				@include mobile {
 					width: 90%;
 					height: 220px;
 					margin: 14px;
-
 				}
 				.left {
 					flex: 4;
@@ -81,16 +82,32 @@
 							display: flex;
 							align-items: center;
 							justify-content: center;
-
+							@include mobile {
+								width: 20px;
+								height: 20px;
+								// align-items: center;
+							}
 							img {
 								width: 25px;
+
+								@include mobile {
+									height: 16px;
+								}
 							}
 						}
 						h2 {
 							font-size: 20px;
+
+							@include mobile {
+								font-size: 20px;
+							}
 						}
 						p {
 							font-size: 13px;
+
+							@include mobile {
+								display: none;
+							}
 						}
 						span {
 							font-size: 12px;
