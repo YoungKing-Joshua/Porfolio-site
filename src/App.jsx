@@ -4,7 +4,6 @@ import Topbar from "./components/topbar/Topbar";
 import Porfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contacts/Contacts";
 import Testimonials from "./components/testimonials/Testimonials";
-import Works from "./components/works/works";
 import Menu from "./components/menu/Menu";
 import Intro from "./components/intro/intro";
 
