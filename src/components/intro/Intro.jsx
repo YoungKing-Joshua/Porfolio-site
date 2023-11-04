@@ -5,19 +5,14 @@ import { init } from "ityped";
 export default function Intro() {
 	const textRef = useRef();
 
-	useEffect(() => {
-		const myElement = () => {
+	useEffect(() => {		
 			init(textRef.current, {
-				showCursor: false,
-				backDelay: 1500,
-				backSpeed: 60,
-				// showCursor: true,
-				strings: ["Software Engineer", "Fullstack Developer", "Content Creator"],
-			});
-		};
-
-		return () => myElement();
-	}, []);
+				showCursor: true,
+      				backDelay: 1100,
+     				backSpeed: 40,
+				strings: ["Software Engineer", "Fullstack Developer", "Content Creator"]
+			})
+	}, [])
 
 	return (
 		<div className='intro' id='intro'>
