@@ -1,0 +1,84 @@
+@import "../../global.scss"; // Import your theme file
+
+.page {
+	font-family: Arial, sans-serif;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// height: 80vh; // Full viewport height
+	overflow: hidden;
+	padding-right: 10px;
+
+	.right-half {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		flex: 1;
+
+		.container {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			z-index: 20;
+			display: flex;
+
+			@include mobile {
+				padding-left: 0;
+				align-items: center;
+			}
+
+			a {
+				transition: all 0.2s;
+				border: 3px solid #c0c0c0;
+				border-radius: 18px;
+
+				.skill {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 80px;
+					height: 80px;
+					background: rgb(248, 240, 240);
+
+					&:hover {
+						cursor: pointer;
+						border: 3px solid #ececf3;
+						box-shadow: 2px 3px 20px 0px #00000038;
+						transform: scale(1);
+
+						&::after {
+							position: absolute;
+							border-radius: 20px;
+							text-align: center;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							content: attr(data-content);
+							width: 100%;
+							font-weight: 700;
+							font-size: 0.8rem;
+							color: black;
+							background: white;
+							opacity: 0.9;
+						}
+					}
+				}
+
+				img {
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+	}
+}

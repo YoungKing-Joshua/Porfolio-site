@@ -28,12 +28,12 @@ export default function Portfolio() {
 		},
 		{
 			id: "design",
-			title: "Design",
+			title: "APIs",
 		},
-		{
-			id: "content",
-			title: "Content",
-		},
+		// {
+		// 	id: "content",
+		// 	title: "Content",
+		// },
 	];
 
 	useEffect(() => {
@@ -73,10 +73,10 @@ export default function Portfolio() {
 			</ul>
 			<div className='container'>
 				{data.map((d) => (
-					<div className='item'>
+					<a href={d.link} target='_blank' rel='noopener noreferrer' className='item'>
 						<img src={d.img} alt='' />
 						<h3>{d.title}</h3>
-					</div>
+					</a>
 				))}
 			</div>
 		</div>

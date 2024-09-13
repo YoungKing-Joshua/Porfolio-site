@@ -8,7 +8,7 @@
 	position: fixed;
 	top: 0;
 	z-index: 3;
-    transition: all 1s ease;
+	transition: all 1s ease;
 
 	.wrapper {
 		padding: 10px 30px;
@@ -33,8 +33,7 @@
 				align-items: center;
 				margin-left: 30px;
 
-
-				@include mobile{
+				@include mobile {
 					display: none;
 				}
 
@@ -55,43 +54,39 @@
 				width: 32px;
 				height: 25px;
 				display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
-                
-                
+				flex-direction: column;
+				justify-content: space-between;
+				cursor: pointer;
 
 				span {
 					width: 100%;
 					height: 3px;
 					background-color: $mainColor;
-                    transform-origin: left;
-                    transition: all 2s ease;
+					transform-origin: left;
+					transition: all 2s ease;
 				}
 			}
 		}
 	}
 
+	&.active {
+		background-color: $mainColor;
+		color: white;
 
- &.active{
-    background-color: $mainColor;
-    color: white;
-    
-
-    .humburger{
-        span{
-            &:first-child{
-                background-color: white;
-                transform: rotate(45deg )
-            }
-            &:nth-child(2){
-                opacity: 0;
-            }
-            &:last-child{
-                background-color: white;
-                transform: rotate(-45deg);
-            }
-        }
-    }
- }
+		.humburger {
+			span {
+				&:first-child {
+					background-color: white;
+					transform: rotate(45deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:last-child {
+					background-color: white;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
 }

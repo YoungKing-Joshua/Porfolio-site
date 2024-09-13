@@ -1,0 +1,103 @@
+@import "../../global.scss"; // Import your theme file
+
+.section-container {
+	background: linear-gradient(to left, #dc143c, #800020);
+	display: flex;
+	height: 100vh; // Ensure the container fits the viewport height
+	overflow: hidden; // Prevent overflow causing scrollbars
+	color: #ffffff; // Set text color to white for better contrast
+
+	
+	@include mobile {
+		height: auto;
+		gap: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.left {
+		flex: 0.47;
+		overflow: hidden;
+
+		.imgContainer {
+			width: 100%;
+			height: 90%;
+			text-align: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding-top: 20px;
+			padding-left: 10px;
+			gap: 10px;
+			z-index: 20;
+			overflow: hidden;
+
+			@include mobile {
+				align-items: flex-start;
+			}
+
+			img {
+				width: 60%;
+				height: 60%;
+				padding-bottom: 10px;
+
+				@include mobile {
+					display: none; // Hide the image on mobile devices
+				}
+			}
+
+			p {
+				font-family: "Poppins", sans-serif;
+				font-size: 1.2em;
+				line-height: 1.5;
+				width: 90%;
+
+				@include mobile {
+					max-width: 900px;
+					text-indent: 30px;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.right {
+		flex: 0.53;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		flex-wrap: wrap;
+		gap: 15px; // Add gap between icons for better spacing
+
+		.skill-icon {
+			width: 60px;
+			height: 60px;
+			background-color: #ffffff;
+			border-radius: 10px; // Rounded corners for icons
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for 3D effect
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 2.5em;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	.intro-text {
+		font-size: 1.2em;
+		margin-bottom: 40px;
+	}
+}

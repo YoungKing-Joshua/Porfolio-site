@@ -7,6 +7,9 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Works from "./components/works/Works";
 import Menu from "./components/menu/Menu";
 import Intro from "./components/intro/Intro";
+import { About } from "./components/about/About";
+import { Skill } from "./components/skills/Skill";
+import PortfolioSkills from "./components/skill/PortfolioSkills";
 
 function App() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +21,9 @@ function App() {
 			<div className='sections'>
 				<Intro />
 				<Porfolio />
-				<Works />
+				<About />
+				{/* <Skill /> */}
+				{/* <Works /> */}
 				<Testimonials />
 				<Contact />
 			</div>
